@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore AZM Group's extensive range of ceramic tiles, porcelain slabs, marble, sanitary ware, faucets, wellness products and hardware in UAE.">
+  <meta name="keywords" content="ceramic tiles UAE, porcelain slabs Dubai, marble fabrication UAE, sanitary ware, faucets, hardware UAE">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Tiles, Sanitary Ware & Building Materials | AZM Group Dubai UAE">
+  <meta property="og:description" content="Explore AZM Group's extensive range of ceramic tiles, porcelain slabs, marble, sanitary ware, faucets, wellness products and hardware in UAE.">
+  <meta property="og:image" content="https://alzahrabm.com/images/og-image.jpg">
+  <meta property="og:url" content="https://alzahrabm.com/products.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://alzahrabm.com/products.html">
+  <link rel="alternate" hreflang="ar" href="https://alzahrabm.com/ar/products.html">
+  <link rel="alternate" hreflang="en" href="https://alzahrabm.com/products.html">
+  
+  <title data-en="Tiles, Sanitary Ware & Building Materials | AZM Group Dubai UAE" data-ar="البلاط، الأدوات الصحية ومواد البناء | مجموعة العزم دبي الإمارات">Tiles, Sanitary Ware & Building Materials | AZM Group Dubai UAE</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/src/style.css">
+  <style>
+    .filter-btn {
+      background: transparent;
+      border: 1px solid var(--azm-border);
+      color: var(--azm-charcoal);
+      padding: 8px 16px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--azm-navy);
+      color: var(--azm-white);
+      border-color: var(--azm-navy);
+    }
+    .filters-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 48px;
+    }
+    .category-card {
+      position: relative;
+      background: var(--azm-white);
+      border: 1px solid var(--azm-border-light);
+      border-radius: 4px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+    }
+    .category-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.8;
+      transition: transform 0.5s ease;
+    }
+    .category-card:hover img {
+      transform: scale(1.05);
+      opacity: 0.4;
+    }
+    .category-content {
+      position: absolute;
+      inset: 0;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background: linear-gradient(to top, rgba(0,31,63,0.9), rgba(0,31,63,0.1));
+      transition: all 0.3s ease;
+    }
+    .category-card h3 {
+      color: var(--azm-white);
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+    .category-details {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: all 0.4s ease;
+    }
+    .category-card:hover .category-details {
+      max-height: 200px;
+      opacity: 1;
+      margin-top: 12px;
+    }
+    .category-details ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: rgba(255,255,255,0.8);
+      font-size: 0.85rem;
+    }
+    .category-details li {
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .category-details li::before {
+      content: "•";
+      color: var(--azm-accent);
+    }
+    .brand-group h4 {
+      border-bottom: 1px solid var(--azm-border);
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/971558090292?text=Hello%20AZM%20Group%2C%20I%20would%20like%20to%20inquire%20about%20your%20products." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.66-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-box">AZM</div>
+        <div>
+          <div class="logo-placeholder">AZM Group</div>
+          <p style="font-size: 0.6rem; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.1em; line-height: 1; margin-top: 4px; margin-bottom: 0;" data-en="Building Materials Excellence" data-ar="التميز في مواد البناء">Building Materials Excellence</p>
+        </div>
+      </a>
+      <nav aria-label="Main Navigation">
+        <a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+        <a href="products.html" class="active" data-en="Products" data-ar="المنتجات">Products</a>
+        <a href="services.html" data-en="Services" data-ar="الخدمات">Services</a>
+        <a href="about.html" data-en="About Us" data-ar="من نحن">About Us</a>
+        <a href="projects.html" data-en="Projects" data-ar="المشاريع">Projects</a>
+        <a href="contact.html" data-en="Contact Us" data-ar="تواصل معنا">Contact Us</a>
+        <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">عربي</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 300px;">
+      <div class="hero-bg" style="opacity: 0.2; background-image: url('/images/products/hero-products.jpg');"></div>
+      <div class="container hero-content text-center" style="text-align: center;">
+        <h1 class="font-heading" data-en="Our Product Portfolio" data-ar="مجموعة منتجاتنا">Our Product Portfolio</h1>
+        <p class="hero-subtitle mx-auto" style="margin-left: auto; margin-right: auto;" data-en="A comprehensive range of high-performance building solutions carefully curated for the UAE market." data-ar="مجموعة متكاملة من حلول البناء عالية الأداء المختارة بعناية لسوق الإمارات.">A comprehensive range of high-performance building solutions carefully curated for the UAE market.</p>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="bg-stone">
+      <div class="container">
+        
+        <!-- Filters -->
+        <div class="filters-container">
+          <button class="filter-btn active" data-filter="all" data-en="All" data-ar="الكل">All</button>
+          <button class="filter-btn" data-filter="tiles" data-en="Tiles & Slabs" data-ar="البلاط والألواح">Tiles & Slabs</button>
+          <button class="filter-btn" data-filter="sanitary" data-en="Sanitary Ware" data-ar="الأدوات الصحية">Sanitary Ware</button>
+          <button class="filter-btn" data-filter="wellness" data-en="Wellness" data-ar="الاستجمام">Wellness</button>
+          <button class="filter-btn" data-filter="marble" data-en="Marble Fabrication" data-ar="تصنيع الرخام">Marble Fabrication</button>
+          <button class="filter-btn" data-filter="hardware" data-en="Hardware" data-ar="المعدات">Hardware</button>
+        </div>
+
+        <!-- Product Cards Grid -->
+        <div class="grid grid-cols-2" id="products-grid" style="gap: 24px;">
+          
+          <!-- Category: Tiles & Slabs -->
+          <div class="category-card" data-category="tiles">
+            <img src="/images/products/tiles-and-slabs.jpg" alt="Tiles & Slabs" loading="lazy" style="background:#ddd;">
+            <div class="category-content">
+              <h3 data-en="Tiles & Slabs" data-ar="البلاط والألواح">Tiles & Slabs</h3>
+              <div class="category-details">
+                <ul>
+                  <li data-en="Ceramic & Porcelain Tiles" data-ar="بلاط السيراميك والبورسلين">Ceramic & Porcelain Tiles</li>
+                  <li data-en="Large Format Slabs" data-ar="ألواح كبيرة الحجم">Large Format Slabs</li>
+                  <li data-en="Outdoor & Anti-Slip Tiles" data-ar="بلاط خارجي ومضاد للانزلاق">Outdoor & Anti-Slip Tiles</li>
+                  <li data-en="Mosaic Tiles" data-ar="بلاط الفسيفساء (موزايك)">Mosaic Tiles</li>
+                  <li data-en="Wood, Marble & Stone Looks" data-ar="تصاميم خشبية ورخامية وحجرية">Wood, Marble & Stone Looks</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category: Sanitary Ware -->
+          <div class="category-card" data-category="sanitary">
+            <img src="/images/products/sanitary-ware.jpg" alt="Sanitary Ware" loading="lazy" style="background:#ccc;">
+            <div class="category-content">
+              <h3 data-en="Sanitary Ware" data-ar="الأدوات الصحية">Sanitary Ware</h3>
+              <div class="category-details">
+                <ul>
+                  <li data-en="Washbasins, Toilets & Vanities" data-ar="مغاسل، مراحيض وخزائن">Washbasins, Toilets & Vanities</li>
+                  <li data-en="Faucets, Mixers & Showers" data-ar="صنابير، خلاطات ودش">Faucets, Mixers & Showers</li>
+                  <li data-en="Finishes: Brushed Chrome, Polished Chrome" data-ar="التشطيبات: كروم مصقول وممشط">Finishes: Brushed Chrome, Polished Chrome</li>
+                  <li data-en="Finishes: Matte Black, Brushed Gold, Brass, Nickel" data-ar="التشطيبات: أسود غير لامع، ذهبي ممشط، نحاس، نيكل">Finishes: Matte Black, Brushed Gold, Brass, Nickel</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category: Wellness -->
+          <div class="category-card" data-category="wellness">
+            <img src="/images/products/wellness.jpg" alt="Wellness" loading="lazy" style="background:#bbb;">
+            <div class="category-content">
+              <h3 data-en="Wellness" data-ar="الاستجمام">Wellness</h3>
+              <div class="category-details">
+                <ul>
+                  <li data-en="Bathtubs & Jacuzzi" data-ar="أحواض استحمام وجاكوزي">Bathtubs & Jacuzzi</li>
+                  <li data-en="Shower Trays" data-ar="قواعد الاستحمام">Shower Trays</li>
+                  <li data-en="Shower Enclosures" data-ar="كبائن استحمام">Shower Enclosures</li>
+                  <li data-en="Shower Seats & Panels" data-ar="مقاعد وألواح دش">Shower Seats & Panels</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category: Porcelain & Marble Fabrication -->
+          <div class="category-card" data-category="marble">
+            <img src="/images/products/marble-fabrication.jpg" alt="Porcelain & Marble Fabrication" loading="lazy" style="background:#aaa;">
+            <div class="category-content">
+              <h3 data-en="Porcelain & Marble Fabrication" data-ar="تصنيع البورسلين والرخام">Porcelain & Marble Fabrication</h3>
+              <div class="category-details">
+                <ul>
+                  <li data-en="Waterjet & Bridge Saw Cutting" data-ar="قص بالووترجيت والمنشار الجسري">Waterjet & Bridge Saw Cutting</li>
+                  <li data-en="Custom Vanities & Countertops" data-ar="مغاسل وأسطح عمل حسب الطلب">Custom Vanities & Countertops</li>
+                  <li data-en="Custom Staircases" data-ar="سلالم مخصصة">Custom Staircases</li>
+                  <li data-en="Custom Kitchen Tops" data-ar="أسطح مطابخ مخصصة">Custom Kitchen Tops</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category: Hardware & Building Materials -->
+          <div class="category-card" data-category="hardware">
+            <img src="/images/products/hardware-tools.jpg" alt="Hardware & Building Materials" loading="lazy" style="background:#999;">
+            <div class="category-content">
+              <h3 data-en="Hardware & Building Materials" data-ar="المعدات ومواد البناء">Hardware & Building Materials</h3>
+              <div class="category-details">
+                <ul>
+                  <li data-en="Hand & Power Tools" data-ar="أدوات يدوية وكهربائية">Hand & Power Tools</li>
+                  <li data-en="Fasteners & Fixing" data-ar="أدوات التثبيت">Fasteners & Fixing</li>
+                  <li data-en="Tiles Adhesive & Chemicals" data-ar="مواد لاصقة وكيماويات البناء">Tiles Adhesive & Chemicals</li>
+                  <li data-en="Safety Equipment" data-ar="معدات السلامة">Safety Equipment</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="bg-white">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 48px;">
+          <h2 data-en="Our Trusted Brands" data-ar="علاماتنا التجارية الموثوقة">Our Trusted Brands</h2>
+          <p style="color: var(--azm-charcoal); max-width: 600px; margin: 8px auto 0;" data-en="Partnering with the world's leading manufacturers." data-ar="شراكة مع أبرز المصنعين في العالم.">Partnering with the world's leading manufacturers.</p>
+        </div>
+        
+        <div class="grid grid-cols-2" style="gap: 48px;">
+          <!-- Sanitary Ware Brands -->
+          <div class="brand-group">
+            <h4 data-en="Sanitary Ware & Wellness" data-ar="الأدوات الصحية والاستجمام">Sanitary Ware & Wellness</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+              <span class="brand-item">VADO</span>
+              <span class="brand-item">Bobrick</span>
+              <span class="brand-item">Jaquar</span>
+              <span class="brand-item">Kludi Rak</span>
+              <span class="brand-item">VitrA</span>
+              <span class="brand-item">Sanit</span>
+              <span class="brand-item">GROHE</span>
+              <span class="brand-item">Nourk</span>
+              <span class="brand-item">Italian Standards</span>
+              <span class="brand-item">Tredex</span>
+              <span class="brand-item">Sonet</span>
+            </div>
+          </div>
+
+          <!-- Hardware Brands -->
+          <div class="brand-group">
+            <h4 data-en="Hardware & Building Materials" data-ar="المعدات ومواد البناء">Hardware & Building Materials</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+              <span class="brand-item">Makita</span>
+              <span class="brand-item">DeWalt</span>
+              <span class="brand-item">Bosch</span>
+              <span class="brand-item">Clarke</span>
+              <span class="brand-item">Geepas</span>
+              <span class="brand-item">Powertex</span>
+              <span class="brand-item">Milano</span>
+              <span class="brand-item">National Paints</span>
+              <span class="brand-item">Stanley</span>
+              <span class="brand-item">Mapei</span>
+              <span class="brand-item">Novex</span>
+              <span class="brand-item">Albustan</span>
+              <span class="brand-item">Sika</span>
+              <span class="brand-item">Duproof</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Catalogue -->
+    <section class="bg-navy" style="padding: 48px 0;">
+      <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+        <h2 style="font-size: 1.75rem; margin-bottom: 16px;" data-en="Explore Our Full Collection" data-ar="استكشف مجموعتنا الكاملة">Explore Our Full Collection</h2>
+        <p style="color: rgba(255,255,255,0.8); max-width: 500px; margin-bottom: 32px;" data-en="Download our comprehensive product catalogue to view detailed specifications and models." data-ar="قم بتحميل الكتالوج الشامل لمنتجاتنا لعرض المواصفات والنماذج التفصيلية.">Download our comprehensive product catalogue to view detailed specifications and models.</p>
+        <a href="/downloads/azm-catalogue.pdf" target="_blank" class="btn btn-primary" data-en="Download PDF Catalogue" data-ar="تحميل الكتالوج PDF">Download PDF Catalogue</a>
+      </div>
+    </section>
+
+    <!-- Inline Quote Form -->
+    <section class="bg-stone">
+      <div class="container">
+        <div class="form-card" style="max-width: 800px; margin: 0 auto;">
+          <div class="text-center" style="margin-bottom: 32px;">
+            <h2 data-en="Request a Quote" data-ar="طلب عرض سعر">Request a Quote</h2>
+            <p style="color: var(--azm-charcoal); margin-top: 8px;" data-en="Tell us what you're looking for, and our team will get back to you with pricing." data-ar="أخبرنا بما تبحث عنه، وسيقوم فريقنا بالرد عليك بالأسعار.">Tell us what you're looking for, and our team will get back to you with pricing.</p>
+          </div>
+          
+          <form id="quote-form-inline" action="/api/quote" method="POST">
+            <div class="grid grid-cols-2" style="gap: 16px;">
+              <div class="form-group">
+                <input type="text" class="form-input" required data-en="Full Name" data-ar="الاسم الكامل" placeholder="Full Name">
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-input" required data-en="Phone / WhatsApp" data-ar="الهاتف / واتساب" placeholder="Phone / WhatsApp">
+              </div>
+            </div>
+            <div class="form-group">
+              <select class="form-select" required>
+                <option value="" disabled selected data-en="Product Interest" data-ar="المنتج المطلوب">Product Interest</option>
+                <option value="tiles" data-en="Tiles & Slabs" data-ar="البلاط والألواح">Tiles & Slabs</option>
+                <option value="sanitary" data-en="Sanitary Ware & Wellness" data-ar="الأدوات الصحية والاستجمام">Sanitary Ware & Wellness</option>
+                <option value="marble" data-en="Marble Fabrication" data-ar="تصنيع الرخام">Marble Fabrication</option>
+                <option value="hardware" data-en="Hardware & Tools" data-ar="المعدات والأدوات">Hardware & Tools</option>
+                <option value="multiple" data-en="Multiple Categories" data-ar="فئات متعددة">Multiple Categories</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea class="form-textarea" required data-en="Additional details or quantities required..." data-ar="أضف تفاصيل إضافية أو كميات..." placeholder="Additional details or quantities required..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;" data-en="Submit Request" data-ar="إرسال الطلب">Submit Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo-placeholder" style="color:var(--azm-white); margin-bottom: 16px;">AZM Group</div>
+          <p style="opacity: 0.8; margin-bottom: 24px;" data-en="Empowering Projects. Shaping Spaces." data-ar="نُمكّن المشاريع. نُشكّل الفضاءات.">Empowering Projects. Shaping Spaces.</p>
+          <div style="display: flex; gap: 16px;">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="LinkedIn">IN</a>
+            <a href="#" aria-label="Twitter">X</a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" data-en="About Us" data-ar="من نحن">About Us</a></li>
+            <li><a href="projects.html" data-en="Projects" data-ar="المشاريع">Projects</a></li>
+            <li><a href="services.html" data-en="Services" data-ar="الخدمات">Services</a></li>
+            <li><a href="contact.html" data-en="Contact Us" data-ar="تواصل معنا">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4 data-en="Products" data-ar="المنتجات">Products</h4>
+          <ul class="footer-links">
+            <li><a href="products.html" data-en="Tiles & Slabs" data-ar="البلاط والألواح">Tiles & Slabs</a></li>
+            <li><a href="products.html" data-en="Sanitary Ware" data-ar="الأدوات الصحية">Sanitary Ware</a></li>
+            <li><a href="marble-fabrication.html" data-en="Marble Fabrication" data-ar="تصنيع الرخام">Marble Fabrication</a></li>
+            <li><a href="products.html" data-en="Hardware" data-ar="المعدات">Hardware</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4 data-en="Contact Info" data-ar="معلومات التواصل">Contact Info</h4>
+          <ul class="footer-links">
+            <li style="opacity: 0.8;" data-en="Tel: +971 4 28 444 52" data-ar="هاتف: +971 4 28 444 52">Tel: +971 4 28 444 52</li>
+            <li style="opacity: 0.8;" data-en="WhatsApp: +971 55 809 0292" data-ar="واتساب: +971 55 809 0292">WhatsApp: +971 55 809 0292</li>
+            <li style="opacity: 0.8;" data-en="Email: office@alzahrabm.com" data-ar="البريد: office@alzahrabm.com">Email: office@alzahrabm.com</li>
+            <li style="opacity: 0.8; line-height: 1.5; margin-top: 12px;" data-en="Shop 12, Building Materials Mall, Warsan-3, Dubai, UAE" data-ar="متجر 12، مول مواد البناء، ورسان-3، دبي، الإمارات">Shop 12, Building Materials Mall, Warsan-3, Dubai, UAE</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span data-en="© 2025 AZM Group. All rights reserved." data-ar="© 2025 مجموعة العزم. جميع الحقوق محفوظة.">© 2025 AZM Group. All rights reserved.</span>
+        <div style="display:flex; gap: 24px;">
+          <a href="#" data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</a>
+          <a href="#" data-en="Sitemap" data-ar="خريطة الموقع">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const productCards = document.querySelectorAll('.category-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Remove active class from all
+          filterBtns.forEach(b => b.classList.remove('active'));
+          // Add to current
+          btn.classList.add('active');
+
+          const filterValue = btn.getAttribute('data-filter');
+
+          productCards.forEach(card => {
+            if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
