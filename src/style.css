@@ -1,15 +1,14 @@
 :root {
-  --azm-teal: #002B49;
-  --azm-navy: #001F3F;
-  --azm-gold: #C5A059;
-  --azm-stone: #f8fafc; /* slate-50 */
-  --azm-marble: #f1f5f9; /* slate-100 */
-  --azm-charcoal: #334155; /* slate-700 */
-  --azm-dark: #0f172a; /* slate-900 */
+  --azm-accent: #1B6B72;
+  --azm-navy: #0F172A;
+  --azm-stone: #fafafa;
+  --azm-marble: #f4f4f5;
+  --azm-charcoal: #3f3f46;
+  --azm-dark: #0f172a;
   --azm-white: #FFFFFF;
   --azm-success: #25D366;
-  --azm-border: #e2e8f0; /* slate-200 */
-  --azm-border-light: #f1f5f9; /* slate-100 */
+  --azm-border: #e4e4e7;
+  --azm-border-light: #f4f4f5;
 }
 
 html[lang="en"] {
@@ -67,7 +66,7 @@ section {
 
 /* Backgrounds */
 .bg-white { background-color: var(--azm-white); border: 1px solid var(--azm-border-light); }
-.bg-navy { background-color: var(--azm-teal); color: var(--azm-white); }
+.bg-navy { background-color: var(--azm-navy); color: var(--azm-white); }
 .bg-navy h2, .bg-navy h3, .bg-navy h4 { color: var(--azm-white); }
 .bg-marble { background-color: var(--azm-stone); }
 .bg-stone { background-color: var(--azm-stone); }
@@ -86,7 +85,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background-color: var(--azm-teal);
+  background-color: var(--azm-navy);
   color: var(--azm-white);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -116,7 +115,7 @@ header {
 .logo .logo-box {
   width: 40px;
   height: 40px;
-  background: var(--azm-gold);
+  background: var(--azm-accent);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,12 +139,12 @@ nav a {
 }
 
 nav a:hover, nav a.active {
-  color: var(--azm-gold);
+  color: var(--azm-accent);
   opacity: 1;
 }
 
 nav a.active {
-  border-bottom: 2px solid var(--azm-gold);
+  border-bottom: 2px solid var(--azm-accent);
   padding-bottom: 2px;
 }
 
@@ -163,7 +162,7 @@ nav a.active {
 
 .lang-toggle:hover {
   background: var(--azm-white);
-  color: var(--azm-teal);
+  color: var(--azm-navy);
 }
 
 /* Buttons */
@@ -182,13 +181,13 @@ nav a.active {
 }
 
 .btn-primary {
-  background-color: var(--azm-gold);
+  background-color: var(--azm-accent);
   color: var(--azm-white);
-  border: 1px solid var(--azm-gold);
+  border: 1px solid var(--azm-accent);
 }
 .btn-primary:hover {
-  background-color: #b5924d;
-  border-color: #b5924d;
+  background-color: #134e53;
+  border-color: #134e53;
 }
 
 .btn-outline {
@@ -215,8 +214,15 @@ nav a.active {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0, 31, 63, 0.9), transparent), url('/images/hero-marble-bathroom.jpg') center/cover;
-  opacity: 0.8;
+  background: url('/images/hero-marble-bathroom.jpg') center/cover;
+  opacity: 0.4;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(15, 23, 42, 0.95), transparent);
+  z-index: 1;
 }
 
 .hero-content {
@@ -233,7 +239,7 @@ html[lang="ar"] .hero-content {
 }
 
 .hero .hero-since {
-  color: var(--azm-gold);
+  color: var(--azm-accent);
   font-weight: 700;
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -282,7 +288,7 @@ html[lang="ar"] .hero-content {
   gap: 8px;
 }
 .stat-item .stat-val {
-  color: var(--azm-gold);
+  color: var(--azm-accent);
   font-weight: 700;
   font-size: 1.125rem;
 }
@@ -327,11 +333,11 @@ html[lang="ar"] .hero-content {
 }
 .vertical-card:hover {
   transform: translateY(-2px);
-  border-color: var(--azm-gold);
+  border-color: var(--azm-accent);
 }
 .vertical-icon {
   font-size: 1.5rem;
-  color: var(--azm-gold);
+  color: var(--azm-accent);
   margin-bottom: 8px;
 }
 .vertical-card p {
@@ -372,7 +378,7 @@ html[lang="ar"] .hero-content {
   font-size: 0.85rem;
 }
 .product-link {
-  color: var(--azm-gold);
+  color: var(--azm-accent);
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -386,7 +392,7 @@ html[lang="ar"] .hero-content {
 .usp-card, .workflow-step {
   text-align: center;
   padding: 24px;
-  background: var(--azm-teal);
+  background: var(--azm-navy);
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
@@ -423,7 +429,7 @@ html[lang="ar"] .workflow-step:not(:last-child)::after {
 .step-number {
   width: 24px;
   height: 24px;
-  background: var(--azm-gold);
+  background: var(--azm-accent);
   color: var(--azm-white);
   border-radius: 50%;
   display: flex;
@@ -442,7 +448,7 @@ html[lang="ar"] .workflow-step:not(:last-child)::after {
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   margin-top: 24px;
-  background: var(--azm-teal);
+  background: var(--azm-navy);
   padding: 24px;
   border-radius: 6px;
   position: relative;
@@ -468,7 +474,7 @@ html[lang="ar"] .workflow-step:not(:last-child)::after {
 .timeline-year {
   font-size: 1.25rem;
   font-weight: 800;
-  color: var(--azm-gold);
+  color: var(--azm-accent);
   margin-bottom: 4px;
 }
 .timeline-item h4 {
@@ -534,7 +540,7 @@ html[lang="ar"] .workflow-step:not(:last-child)::after {
   color: var(--azm-charcoal);
 }
 .form-input:focus, .form-select:focus, .form-textarea:focus {
-  border-color: var(--azm-gold);
+  border-color: var(--azm-accent);
 }
 .form-textarea {
   min-height: 80px;
